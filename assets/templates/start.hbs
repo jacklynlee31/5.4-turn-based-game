@@ -1,0 +1,15 @@
+<center>
+	<h1>SELECT YOUR CHARACTER</h1>
+</center>
+
+{{#each this as |character|}}
+    <div class="start-pic">
+        <img src="images/{{ character.imgUrl }}" alt="{{character.name}}">
+    </div>
+{{/each}}
+
+{{#each this as |character|}}
+	<div class="start-name">
+        <button data-index="{{@index}}" class="name">{{character.name}}</button>
+    </div>
+{{/each}}

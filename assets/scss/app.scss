@@ -1,0 +1,49 @@
+@import 'reset';
+@import 'bourbon';
+@import 'neat';
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+html {
+  box-sizing: border-box;
+  font-family: 'Droid Sans Mono';
+  background-color: black;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.start {
+	@include span-columns(6);
+	position: absolute;
+	border: 1px solid black;
+	color: white;
+	background-color: #400080;
+	text-align: center;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -30%);
+	padding-bottom: 3em;
+}
+.start h1 {
+	padding: 3em;
+	font-weight: bold;
+}
+.start-pic {
+	display: inline;
+}
+.start-name {
+	text-align: center;
+	font-family: 'Droid Sans Mono';
+	display: inline;
+}
+button {
+	font-size: 1em;
+	font-family: 'Droid Sans Mono';
+	background-color: black;
+	color: white;
+	border-color: red;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+.start img {
+}
