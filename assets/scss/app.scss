@@ -12,6 +12,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+// START SCREEN
+
 .start {
 	@include span-columns(6);
 	position: absolute;
@@ -45,5 +48,10 @@ button {
 	padding-right: 2em;
 	padding-left: 2em;
 }
-.start img {
-}
+
+// BATTLE SCREEN
+
+// WIN SCREEN
+
+// LOSE SCREEN
+
