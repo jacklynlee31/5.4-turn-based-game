@@ -15,7 +15,7 @@ html {
 
 // START SCREEN
 
-.start {
+.game {
 	@include span-columns(6);
 	position: absolute;
 	border: 1px solid black;
@@ -26,10 +26,10 @@ html {
 	top: 30%;
 	transform: translate(-50%, -30%);
 	padding-bottom: 3em;
+	padding-top: 3em;
 }
-.start h1 {
-	padding: 3em;
-	font-weight: bold;
+.game h1{
+	padding-bottom: 3em;
 }
 .start-pic {
 	display: inline;
@@ -50,6 +50,9 @@ button {
 }
 
 // BATTLE SCREEN
+.battle {
+	border: 7px solid yellow;
+}
 
 // WIN SCREEN
 
