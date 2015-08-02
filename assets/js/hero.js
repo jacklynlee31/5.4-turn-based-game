@@ -1,4 +1,4 @@
-function Hero(name, health, ability, imgUrl, sprite) {
+function Hero(name, health, ability, imgUrl, spriteUrl) {
   this.name = name;
   this.health = health;
   this.ability = ability;
