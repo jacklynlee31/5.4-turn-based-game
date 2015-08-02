@@ -1,12 +1,12 @@
 function Game() {
   this.heroes = [];
-  this.enemies = [];
+  this.enemies = [enemies[0]];
   this.gameOver = false;
 }
 
-Game.prototype = {
+Game.prototype = _.extend({
   constructor: Game
-};
+});
 
 // game constructor
 

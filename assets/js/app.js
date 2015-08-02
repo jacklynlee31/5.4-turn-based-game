@@ -1,23 +1,11 @@
+// A User should see a start screen
 $('.game').html(AppTemplates.start(heroes));
 
+// A User should be able to choose a character for their game
+
+// A User should see the battle screen when a character is clicked
+
 $('.start-name').click(function() {
-  $('.start').html(AppTemplates.battle());
+  $('.game').html(AppTemplates.battle());
 });
 
-// $('.start-name').on('click', function() {
-//   $('.start').html(AppTemplates.battle());
-// });
-
-  // .html('div.battle');
-
-  // $('.game').html(div.battle);
-
-// $('.start').html(AppTemplates.start(heroes));
-
-// $('.start').click(function() {
-//   html = ('.battle');
-// });
-
-// $(game).html(AppTemplates.start());
-// $(game).html(AppTemplates.battle());
-// $(game).html(AppTemplates.end());
