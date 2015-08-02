@@ -1,8 +1,9 @@
-function Hero(name, health, ability, imgUrl, spriteUrl) {
+function Hero(name, health, ability, imgUrl) {
   this.name = name;
   this.health = health;
   this.ability = ability;
   this.imgUrl = imgUrl;
+  this.spriteUrl = spriteUrl;
 }
 
 Hero.prototype = {
@@ -19,6 +20,10 @@ this.health = function() {
 
 this.ability = function() {
   return this.ability;
+};
+
+this.spriteUrl = function() {
+  return this.spriteUrl;
 };
 
 var heroes = [

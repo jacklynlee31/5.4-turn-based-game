@@ -9,3 +9,4 @@ $('.start-name').click(function() {
   $('.game').html(AppTemplates.battle());
 });
 
+var game = new Game(this);

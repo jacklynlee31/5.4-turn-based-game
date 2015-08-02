@@ -1,4 +1,4 @@
-function Enemy(name, health, ability, sprite) {
+function Enemy(name, health, ability, spriteUrl) {
   this.name = name;
   this.health = health;
   this.ability = ability;
@@ -18,6 +18,10 @@ this.health = function() {
 
 this.ability = function() {
   return this.ability;
+};
+
+this.spriteUrl = function() {
+  return this.spriteUrl;
 };
 
 var enemies = [
