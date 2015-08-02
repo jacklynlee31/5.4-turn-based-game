@@ -2,17 +2,22 @@
 	<h1>BATTLE</h1>
 </center>
 
-{{#each heroes as |character|}}
-    <div class="test">
-        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
-    </div>
-{{/each}}
-
-{{#each enemies as |character|}}
-    <div class="test">
-        <img src="images/{{ enemies.spriteUrl }}" alt="{{enemies.name}}">
-    </div>
-{{/each}}
+<div class="sprites">
+	{{#each heroes as |character|}}
+	    <div class="sprite-hero">
+	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
+	        <p class="health">Health: {{ character.health }}</p>
+	        <button class="attack">Attack with {{ character.ability }}</button>
+	    </div>
+	{{/each}}
+	{{#each enemies as |character|}}
+		<div class="sprite-enemy">
+	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
+	        <p class="health">Health: {{ character.health }}</p>
+	        <p class="enemy-attack">Attack: {{ character.ability }}</p>
+	    </div>
+	{{/each}}
+</div>
 
 {{!-- the photo of whatever the 'chosen' character is --}}
 

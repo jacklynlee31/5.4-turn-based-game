@@ -39,7 +39,7 @@ html {
 	font-family: 'Droid Sans Mono';
 	display: inline;
 }
-button {
+.start-name {
 	font-size: 1em;
 	font-family: 'Droid Sans Mono';
 	background-color: black;
@@ -50,6 +50,36 @@ button {
 }
 
 // BATTLE SCREEN
+
+.sprites {
+	background-color: white;
+	@include span-columns(12);
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.sprite-hero {
+	@include span-columns(6 of 12);
+}
+.sprite-enemy {
+	@include span-columns(6 of 12);
+}
+.health {
+	color: black;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.attack {
+	color: white;
+	background-color: black;
+	border: 2px solid red;
+	font-size: .9em;
+	font-family: 'Droid Sans Mono';
+}
+.enemy-attack {
+	color: black;
+	font-size: .9em;
+	font-family: 'Droid Sans Mono';
+}
 
 // WIN SCREEN
 
