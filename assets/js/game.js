@@ -1,8 +1,10 @@
-function Game() {
-  this.heroes = [];
+function Game(hero) {
+  this.heroes = [hero];
   this.enemies = [enemies[0]];
   this.gameOver = false;
 }
+
+// _.random(0,2);
 
 Game.prototype = _.extend({
   constructor: Game

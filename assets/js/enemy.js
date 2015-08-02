@@ -2,6 +2,7 @@ function Enemy(name, health, ability, spriteUrl) {
   this.name = name;
   this.health = health;
   this.ability = ability;
+  this.spriteUrl = spriteUrl;
 }
 
 Enemy.prototype = {
