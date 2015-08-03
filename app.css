@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-family: 'Droid Sans Mono';
+  background-color: black; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.game {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  position: absolute;
+  border: 1px solid black;
+  color: white;
+  background-color: #400080;
+  text-align: center;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  padding-bottom: 3em;
+  padding-top: 3em; }
+  .game:last-child {
+    margin-right: 0; }
+
+.game h1 {
+  padding-bottom: 3em; }
+
+.start-pic {
+  display: inline; }
+
+.start-name {
+  text-align: center;
+  font-family: 'Droid Sans Mono';
+  display: inline; }
+
+.start-name {
+  font-size: 1em;
+  font-family: 'Droid Sans Mono';
+  background-color: black;
+  color: white;
+  border-color: red;
+  padding-right: 2em;
+  padding-left: 2em; }
+
+.sprites {
+  background-color: white;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .sprites:last-child {
+    margin-right: 0; }
+
+.sprite-name {
+  padding-top: 1em;
+  color: black;
+  font-weight: 900; }
+
+.sprite-hero {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .sprite-hero:last-child {
+    margin-right: 0; }
+
+.sprite-enemy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .sprite-enemy:last-child {
+    margin-right: 0; }
+
+.health {
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.attack {
+  color: white;
+  background-color: black;
+  border: 2px solid red;
+  font-size: .9em;
+  font-family: 'Droid Sans Mono'; }
+
+.enemy-attack {
+  color: black;
+  font-size: .9em;
+  font-family: 'Droid Sans Mono'; }
