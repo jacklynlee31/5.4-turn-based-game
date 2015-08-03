@@ -1,3 +1,4 @@
+// Set the enemy characteristics
 function Enemy(name, health, ability, spriteUrl) {
   this.name = name;
   this.health = health;
@@ -5,26 +6,14 @@ function Enemy(name, health, ability, spriteUrl) {
   this.spriteUrl = spriteUrl;
 }
 
-Enemy.prototype = {
-  constructor: Enemy
-};
+Enemy.prototype = _.extend({
+  constructor: Enemy,
+  attack: function(character) {
+    character.health -= this.ability.damage;
+  }
+}, Backbone.Events);
 
-this.name = function() {
-  return this.name;
-};
-
-this.health = function() {
-  return this.name;
-};
-
-this.ability = function() {
-  return this.ability;
-};
-
-this.spriteUrl = function() {
-  return this.spriteUrl;
-};
-
+// Who are your enemies & what are their characteristics?
 var enemies = [
 	new Enemy('Kunzite', 150, {name: 'Ice Blast', damage: 20}, 'k-sprite.png'),
 	new Enemy('Queen Beryl', 200, {name: 'Shadow Slice', damage: 30}, 'b-sprite.png'),
