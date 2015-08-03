@@ -15,6 +15,24 @@ $('.start-name').on('click', function() {
   });
 
   game.on('change', function() {
-    $('.game').html(AppTemplates.battle(game));
+    if (game.gameWin()) {
+      $('.game').html(AppTemplates.win(game));
+    } else {
+      $('.game').html(AppTemplates.battle(game));
+    }
+
+    if (game.gameLose()) {
+      $('.game').html(AppTemplates.lose(game));
+    } else {
+      $('.game').html(AppTemplates.battle(game));
+    }
   });
+
 });
+
+    // if (game.gameOver()) {
+
+//   game.on('change', function() {
+//     $('.game').html(AppTemplates.battle(game));
+//   });
+// });
