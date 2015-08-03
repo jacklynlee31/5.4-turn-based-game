@@ -26,7 +26,7 @@ this.spriteUrl = function() {
 };
 
 var enemies = [
-	new Enemy('Kunzite', 150, 'Ice Blast', 'k-sprite.png'),
-	new Enemy('Queen Beryl', 200, 'Shadow Slice', 'b-sprite.png'),
-	new Enemy('Queen Metallia', 300, 'Havoc', 'b-sprite.png')
+	new Enemy('Kunzite', 150, {name: 'Ice Blast', damage: 20}, 'k-sprite.png'),
+	new Enemy('Queen Beryl', 200, {name: 'Shadow Slice', damage: 30}, 'b-sprite.png'),
+	new Enemy('Queen Metallia', 300, {name: 'Havoc', damage: 40}, 'b-sprite.png')
 ];

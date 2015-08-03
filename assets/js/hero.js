@@ -27,7 +27,20 @@ this.spriteUrl = function() {
 };
 
 var heroes = [
-	new Hero('Sailor Moon', 100, 'Moon Tiara Action', 'moon.gif', 'moon-sprite.png'),
-	new Hero('Sailor Mars', 100, 'Fire Soul', 'mars.gif', 'mars-sprite.png'),
-	new Hero('Sailor Venus', 100, 'Crescent Beam', 'venus.gif', 'venus-sprite.png')
+	new Hero('Sailor Moon', 100, {name: 'Moon Tiara Action', damage: 25}, 'moon.gif', 'moon-sprite.png'),
+	new Hero('Sailor Mars', 100, {name: 'Fire Soul', damage: 30}, 'mars.gif', 'mars-sprite.png'),
+	new Hero('Sailor Venus', 100, {name: 'Crescent Beam', damage: 30}, 'venus.gif', 'venus-sprite.png')
 ];
+
+$('.game').on('click', '.attack', function(ev) {
+  game.runAttack();
+});
+
+this.getAttackStrength = function(aiblityName) {
+  if (this.ability[abilityName]) {
+    return this.ability[abilityName];
+  }
+
+  return 5;
+};
+

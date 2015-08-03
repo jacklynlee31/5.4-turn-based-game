@@ -3,22 +3,26 @@
 </center>
 
 <div class="sprites">
-	{{#each heroes as |character|}}
-	    <div class="sprite-hero">
-	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
-	        <p class="health">Health: {{ character.health }}</p>
-	        <button class="attack">Attack with {{ character.ability }}</button>
-	    </div>
-	{{/each}}
-	{{#each enemies as |character|}}
-		<div class="sprite-enemy">
-	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
-	        <p class="health">Health: {{ character.health }}</p>
-	        <p class="enemy-attack">Attack: {{ character.ability }}</p>
-	    </div>
-	{{/each}}
-</div>
 
 {{!-- the photo of whatever the 'chosen' character is --}}
 
+	{{#each heroes as |character|}}
+	    <div class="sprite-hero">
+	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
+			<p class="sprite-name">{{ character.name }}</p>
+	        <p class="health">Health: {{ character.health }}</p>
+	        <button class="attack">Attack with {{ character.ability.name }}</button>
+	    </div>
+	{{/each}}
+
 {{!-- the photo of the enemy depending on the round --}}
+
+	{{#each enemies as |character|}}
+		<div class="sprite-enemy">
+	        <img src="images/{{ character.spriteUrl }}" alt="{{character.name}}">
+	        <p class="sprite-name">{{ character.name }}</p>
+	        <p class="health">Health: {{ character.health }}</p>
+	        <p class="enemy-attack">Attack: {{ character.ability.name }}</p>
+	    </div>
+	{{/each}}
+</div>

@@ -57,6 +57,11 @@ html {
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
+.sprite-name {
+	padding-top: 1em;
+	color: black;
+	font-weight: 900;
+}
 .sprite-hero {
 	@include span-columns(6 of 12);
 }
